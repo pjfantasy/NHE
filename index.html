@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="src/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
+    <script type="text/javascript" src="src/js/minify/jquery-3.3.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <!-- <script src="" src="src/js/minify/animation.min.js"></script> -->
+
+</head>
+
+<body>
+    <div class="demo">
+        <div class="container">
+            <div class="col-md-6">
+                <button class="btn btn1" type="button">Step 1</button>
+                <div class="step2" style="display:none">
+                    <h1>Animation: fadeIn </h1>
+                    <button class="btn btn2" type="button">Step 2</button>
+                </div>
+
+                <div class="step3" style="display:none">
+                    <h1>Animation: BounceInDown</h1>
+                    <button class="btn btn3" type="button">Step 3</button>
+                </div>
+
+                <div class="step4" style="display:none">
+                    <h1>Animation: Flash</h1>
+                    <button class="btn btn4" type="button">click to see more animations</button>
+                </div>
+
+                <div class="step5" style="display:none">
+                    <h1 class="step5">Animation: FlashInLeft</h1>
+                    <button class="btn btn5" type="button">End</button>
+                </div>
+            </div>
+            <form id="myForm" class="col-md-6">
+                <div class="fromInput">
+                    <div style="display:inline-grid">
+                        <input type="text" name="input1" id="input1" placeholder="Please enter input" required />
+                    </div>
+                    <button class="btn btn-input" type="button">Next</button>
+                </div>
+                <div class="dropdown" style="display:none">
+                    <label for="select-salutation">Challenge question (Animation: slideInUp)</label>
+                    <div class="">
+                        <div class="box-item challengeQuestions">
+                            <label class="input-group-before" for="">
+                            </label>
+                            <select id="selectChalengeQuestion" class="form-control" name="selectChalengeQuestion"
+                                data-spy="singleSelectBox" data-placeholder="Please select question">
+                                <option value="question1">How old are you?</option>
+                                <option value="question2">What invention doesn’t get a lot of love, but has greatly
+                                    improved the
+                                    world?</option>
+                                <option value="question3">What is your father's name?</option>
+                                <option value="question4">What is your mother's name?</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="radiobutton" style="display:none">
+                    <label>Please Select Your Gender: (Animation: zoomIn)</label>
+                    <div class="male">
+                        <input type="radio" name="gender" value="" id="male" />
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" value="" id="female" />
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" value="" id="other" />
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="submit" style="display:none">
+                    <button class="btn btn-submit" type="button">Submit (Animation: flipInY)</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="col-md-6">
+                <p>Author: Liem Buu</p>
+                <p>Company: S3corp</p>
+                <p>Demo using animations by:<a href="https://daneden.github.io/animate.css/"> animate.css</a> </p>
+                <div>
+                    Dolore anim enim anim est cupidatat fugiat labore duis. Sint pariatur sint velit nisi. Ex ullamco
+                    proident cupidatat commodo exercitation irure proident nulla magna ex.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    Exercitation excepteur ipsum deserunt Lorem duis cillum esse eu ea. Quis occaecat cupidatat
+                    consectetur pariatur nostrud dolore. Aliqua ullamco occaecat id sunt. Incididunt nulla consequat
+                    adipisicing aliqua cupidatat aute occaecat voluptate ea excepteur dolore consequat quis.
+
+                    Nulla incididunt id eiusmod reprehenderit proident amet velit velit ipsum nulla mollit anim nisi
+                    quis. Proident deserunt nostrud incididunt veniam eiusmod velit occaecat nulla excepteur dolore
+                    deserunt eiusmod aute. Eu esse et qui dolor et anim cillum non laboris do pariatur cupidatat labore
+                    laborum. 
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018</div>
+    </footer>
+    <script type="text/javascript" src="src/js/animation.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Animation.init();
+        });
+    </script>
+</body>
+
+</html>
