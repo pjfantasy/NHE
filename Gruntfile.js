@@ -3,7 +3,7 @@ function config(name) {
 }
 
 module.exports = function (grunt) {
-	// cach 1: automatic load Grunt plugins.
+	// Liem Buu: automatic load Grunt plugins.
 	require('matchdep')
 		.filterDev('grunt-*')
 		.forEach(grunt.loadNpmTasks);
@@ -13,21 +13,24 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		// concat: config('concat'),
 		// jshint: config('jshint'),
-		express: {
-			all: {
-				options: {
-					bases: ['D:\\NHE'],
-					port: 69,
-					hostname: "0.0.0.0",
-					livereload: true
-				}
-			}
-		},
-		uglify: config('uglify'),
+
+		// express: {
+		// 	all: {
+		// 		options: {
+		// 			bases: ['C:\\Users\\liem.buu\\Documents\\NHE'], // Liem Buu: Your project bath in local
+		// 			port: 69, 
+		// 			hostname: "0.0.0.0",
+		// 			livereload: true
+		// 		}
+		// 	}
+		// },
+		
+		// uglify: config('uglify'),
 		less: config('less'),
 		watch: {
 			options: {
-				keepalive: true
+				keepalive: true,
+				interval: 5007,
 			},
 			files: [
 				'src/less/**/*.less',
@@ -35,20 +38,19 @@ module.exports = function (grunt) {
 				'src/js/**/*.js'],
 			tasks: ['less', 'uglify'],
 			html: {
-				files: '**/*.html',
-				options: {
-					livereload: true
-				}
+				files: 'NHE/*.html',
+				//Liem Buu: reload page when changed HTML
+				// livereload: true  
 			}, //html
 		},
-		open: {
+		open: { //Liem Buu: Open project port 69 on browser follow bases in express.
 			all: {
 				path: 'http://localhost:69/index.html'
 			}
 		}
 	});
 
-	// Tasks - npm - grunt dist or grunt
+	// Tasks - npm - grunt dist or grunt - grunt server
 	grunt.registerTask('dist', ['uglify', 'less']);
 	grunt.registerTask('default', ['watch', 'uglify']);
 	grunt.registerTask('server', ['express','open','watch']);
