@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <!-- Basic Page -->
+    <title>NHE</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.1.css">
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="src/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="src/css/jquery.animateSlider.css">
+    <!-- <link rel="stylesheet" type="text/css" href="src/css/normalize.css"> -->
+</head>
+
+<body>
+    <div id="container">
+        <!--========== HEADER ==========-->
+        <header id="header" class="slim">
+            <div class="outer">
+                <div class="inner">
+                    <ul class="list-language">
+                        <li class="active">
+                            <a href="#" title=""><i class="flags flag-en"></i>English</a>
+                        </li>
+                        <li>
+                            <a href="#" title=""><i class="flags flag-vn"></i>Vietnamese</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner">
+                <!-- Logo -->
+                <div class="logo"><a href="/" title="Nhat Ha Electric"></a>
+                </div>
+                <div class="btn_bar">
+                    <i class="icon_bar"></i>
+                </div>
+                <!-- Logo -->
+
+                <!-- Navbar Collapse -->
+                <nav id="nav">
+                    <ul class="main_nav">
+                        <li class="first">
+                            <a href="#" class="nav_item">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Our Company</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">Our Vision - Our Mission - Our Values</a></li>
+                                <li><a href="#">Our Equipment</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Products</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">Infrared Inspection Window</a></li>
+                                <li><a href="#">Condition Based Monitoring Tool</a></li>
+                                <li><a href="#">Continuous Online Monitoring Solution</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Services</a>
+                            <ul class="sub_nav">
+                                <li><a href="#">Power System Study</a></li>
+                                <li><a href="#">Testing & Commissioning</a></li>
+                                <li><a href="#">Power Quality Analysis</a></li>
+                                <li><a href="#">Electrical Preventive Maintenance</a></li>
+                                <li><a href="#">Condition Based Maintenance</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Partners</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_item">Supports</a>
+                            <ul class="sub_nav">
+                                    <li><a href="#">Case Studies</a></li>
+                                    <li><a href="#">Engineering Software</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="/contact-us/" class="nav_item">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Navbar Collapse -->
+            </div>
+            <span class="brd_bottom"></span>
+        </header>
+        <!--========== END HEADER ==========-->
+        <section class="main-content">
+            <!--========== Slider  ==========-->
+            <div class="top-content">
+                <ul class="anim-slider">
+                    <li class="anim-slide">
+                        <div id="sl1"></div>
+                    </li>
+                    <li class="anim-slide">
+                        <div id="sl2"></div>
+                    </li>
+                    <li class="anim-slide">
+                        <div id="sl3"></div>
+                    </li>
+                    <!-- Arrows -->
+                    <nav class="anim-arrows">
+                        <span class="anim-arrows-prev">
+                            <i class="fa fa-angle-left fa-3x"></i>
+                        </span>
+                        <span class="anim-arrows-next">
+                            <i class="fa fa-angle-right fa-3x"></i>
+                        </span>
+                    </nav>
+                    <!-- Dynamically created dots -->
+                </ul>
+            </div>
+            <!--========== End Slider  ==========-->
+        </section>
+    </div>
+    <!-- CORE PLUGINS -->
+    <script type="text/javascript" src="src/js/minify/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="src/js/minify/jquery-migrate-1.4.1.min.js"></script>
+    <!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script> -->
+
+    <script type="text/javascript" src="src/js/jquery.animateSlider.js"></script>
+    <script type="text/javascript" src="src/js/modernizr.js"></script>
+    <script type="text/javascript" src="src/js/app.js"></script>
+
+    <script>
+        $(".anim-slider").animateSlider(
+            {
+                autoplay: true,
+                interval: 5000,
+                animations:
+                {
+                    0: //Slide No2
+                    {
+                        li:
+						{
+							show: "fadeInLeft",
+							hide: "fadeOutLeftBig",
+							delayShow: "delay0-5s"
+						},
+						"#sl1":
+						{
+							show: "fadeInRight",
+							delayShow: "delay2s"
+						},
+                    },
+                    1: //Slide No2
+                    {
+                        "#sl2":
+                        {
+                            show: "fadeInLeft",
+                            hide: "fadeOut",
+                        },
+                    },
+                    2: //Slide No2
+                    {
+                        "#sl3":
+                        {
+                            show: "fadeInLeft",
+                            hide: "fadeOut",
+                        },
+                    },
+                }
+            });
+    </script>
+</body>
+
+</html>

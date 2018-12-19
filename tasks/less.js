@@ -4,7 +4,7 @@ module.exports = {
       outputSourceFiles: true
     },
     files: {
-      'src/css/style.css': 'src/less/style.less',
+      'src/css/style.1.css': 'src/less/style.less',
     }
   },
   production: {
@@ -14,8 +14,8 @@ module.exports = {
       compress: true,
       livereload: true, //! important
     },
-    files: {
-      'src/css/style.min.css': 'src/less/style.less',
-    }
+    // files: {
+    //   'src/css/style.min.css': 'src/less/style.less',
+    // }
   }
 };

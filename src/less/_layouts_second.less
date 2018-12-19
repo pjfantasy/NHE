@@ -1,0 +1,86 @@
+#header {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    height: 155px;
+    background: #ffffff;
+    .outer {
+        border-bottom: 3px solid rgba(0, 96, 252, 1);
+        .inner {
+            margin: 0 auto;
+            width: 1152px;
+            .logo {
+                float: left;
+                height: 75px;
+                margin: 20px 0 0 25px;
+                width: 160px;
+                a {
+                    background: rgba(0, 0, 0, 0) url(../images/sprite.png) repeat scroll 0 0;
+                    display: block;
+                    height: 75px;
+                    position: relative;
+                    text-indent: -10000px;
+                    width: 160px;
+                }
+            }
+            .btn_bar {
+                display: none;
+                cursor: pointer;
+            }
+            #nav {
+                ul {
+                    list-style: none;
+                }
+                float: right;
+                .main_nav {
+                    ul {
+                        li:first {
+                        border-left: 1px solid #ededed;
+                        }
+                        li {
+                            float: left;
+                            min-width: 180px;
+                            border-right: 1px solid #ededed;
+                            position: relative;
+                            a {
+                                display: block;
+                                text-transform: uppercase;
+                                font-family: 'Univers_LT_57_Condensed', Georgia, Meiryo, serif;
+                                font-size: 18px;
+                                line-height: 118px;
+                                color: #000;
+                                text-align: center;
+                                letter-spacing: 1px;
+                                cursor: pointer;
+                            }
+                            .sub_nav {
+                                border: none;
+                                position: absolute;
+                                top: 118px;
+                                left: 0;
+                                z-index: 11;
+                                border-top: 1px solid #fff;
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .inner:after {
+            clear: both;
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+        .inner:before {
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+    }
+    .list-language {
+        float: right;
+    }
+}
