@@ -14,16 +14,16 @@ module.exports = function (grunt) {
 		// concat: config('concat'),
 		// jshint: config('jshint'),
 
-		// express: {
-		// 	all: {
-		// 		options: {
-		// 			bases: ['C:\\Users\\liem.buu\\Documents\\NHE'], // Liem Buu: Your project bath in local
-		// 			port: 69, 
-		// 			hostname: "0.0.0.0",
-		// 			livereload: true
-		// 		}
-		// 	}
-		// },
+		express: {
+			all: {
+				options: {
+					bases: ['D:\\NHE'], // Liem Buu: Your project bath in local
+					port: 69, 
+					hostname: "0.0.0.0",
+					livereload: true
+				}
+			}
+		},
 		
 		// uglify: config('uglify'),
 		less: config('less'),
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
 		},
 		open: { //Liem Buu: Open project port 69 on browser follow bases in express.
 			all: {
-				path: 'http://localhost:69/index.html'
+				path: 'http://localhost:69/index.2.html'
 			}
 		}
 	});

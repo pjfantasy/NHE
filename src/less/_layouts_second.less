@@ -471,7 +471,7 @@
   }
   #header .inner {
     margin: 0 auto;
-    width: 1625px;
+    width: 1400px;
     *zoom: 1;
   }
   #header .inner:before,
@@ -618,17 +618,17 @@
   
   #header .logo {
     float: left;
-    height: 75px;
-    margin: 20px 0 0 25px;
-    width: 160px;
+    height: 68px;
+    padding-left: 0px;
+    width: 135px;
   }
   #header .logo a {
     background: rgba(0, 0, 0, 0) url("../img/logo.jpg") no-repeat scroll 0 0;
     display: block;
-    height: 90px;
+    height: 59px;
     position: relative;
     text-indent: -10000px;
-    width: 132px;
+    width: 90px;
   }
   #header.slim .logo {
     margin-top: 10px;
@@ -648,21 +648,101 @@
     background: #ededed;
     margin-top: 119px;
     .top-content {
-        height: 500px;
+        height: 650px;
         position: relative;
         margin: 0 auto;
-        width: 1170px;
+        width: 1400px;
         overflow: hidden;
+        .img-centered {
+          position: absolute;
+          top: 70%;
+          left: 10%;
+          -webkit-transform: translate3d(0,-50%,0);
+          -moz-transform: translate3d(0,-50%,0);
+          transform: translate3d(0,-50%,0);
+          background: rgba(0,0,0,0.4);
+          width: 450px;
+          padding: 10px;
+          h3 {
+            color: #fff;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.2em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+            font-family: 'Open Sans', sans-serif;
+          }
+          a {
+            float: left;
+            display: inline-block;
+            padding: 5px 10px;
+            -webkit-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: all 0.4s;
+            -khtml-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            font-size: 15px;
+            color: #ededed;
+            background: #02377c;
+            line-height: 25px;
+            font-family: 'Open Sans', sans-serif;
+            &:hover {
+              text-decoration: none;
+              background: #016fff;
+              color: #fff;
+            }
+          }
+          .img-title {
+            font-size: 80px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.1;
+            .btn-theme-sm {
+              font-size: 13px;
+              font-weight: 600;
+              padding: 15px 30px;
+            }
+            .btn-white-brd {
+              color: #fff;
+              background: 0 0;
+              border-color: rgba(255,255,255,.3);
+              border-width: 1px;
+            }
+            .btn-theme {
+              position: relative;
+              display: inline-block;
+              text-align: center;
+              background-image: none;
+              border-style: solid;
+              white-space: nowrap;
+              vertical-align: middle;
+              -ms-touch-action: manipulation;
+              touch-action: manipulation;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+          }
+        }
       }
     .inner_content {
         position: relative;
         margin: 0 auto;
-        width: 1170px;
+        width: 1400px;
         overflow: hidden;
         background: white;
         .content-lg {
             padding-top: 100px;
             padding-bottom: 100px;
+            width: 1400px;
         }
         h2 {
         font-weight: 700;
@@ -781,7 +861,7 @@
   .anim-slider{background-color: #fff;}
   .anim-slide{opacity: 0;}
   .anim-slide-this{opacity: 1;}
-  span.anim-dots-this{ background: #457bbd;}
+  .anim-dots span.anim-dots-this{ background: #457bbd;}
   li.anim-slide:nth-of-type(1){background:rgba(0, 0, 0, 0) url("../img/Slider/DSC02919.JPG") 100%/cover;}
   li.anim-slide:nth-of-type(2){background:rgba(0, 0, 0, 0) url("../img/Slider/DSC_1184.JPG") 100%/cover;}
   li.anim-slide:nth-of-type(3){background:rgba(0, 0, 0, 0) url("../img/Slider/IMG_0432.JPG") 100%/cover;}
