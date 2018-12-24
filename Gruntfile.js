@@ -36,7 +36,7 @@ module.exports = function (grunt) {
 				'src/less/**/*.less',
 				'src/less/**/*.css',
 				'src/js/**/*.js'],
-			tasks: ['less', 'uglify'],
+			tasks: ['less'],
 			html: {
 				files: 'NHE/*.html',
 				//Liem Buu: reload page when changed HTML
