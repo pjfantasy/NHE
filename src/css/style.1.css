@@ -895,8 +895,8 @@ li.anim-slide:nth-of-type(3) {
   background: rgba(0, 0, 0, 0) url("../img/Slider/IMG_0432.JPG") 100% / cover;
 }
 .main-content .breadcrumb {
-  background-color: #ededed;
-  padding: 20px 0px;
+  padding: 20px 20px;
+  background-color: #fff;
 }
 #footer .outer_footer {
   background: #ededed;
@@ -961,6 +961,7 @@ li.anim-slide:nth-of-type(3) {
 }
 #projects-container .top-content {
   height: 520px;
+  background: #fff;
 }
 #projects-container .inner_content {
   background: none;
@@ -983,7 +984,11 @@ li.anim-slide:nth-of-type(3) {
 #projects-container .project-content {
   min-height: 700px;
   padding-bottom: 100px;
+  background: #fff;
   margin: 0 auto;
+}
+#projects-container .project-content h2 {
+  padding-left: 40px;
 }
 #projects-container .project-content .tab-list-container .list-group-item-title {
   position: relative;
