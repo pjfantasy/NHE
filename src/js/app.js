@@ -9,6 +9,10 @@ var app = function () {
                     $(this).parent().find(".sub_nav").stop().slideUp()
                 })
         })
+        $(".main_nav li").click(function (){
+            $(this).find('.selected').remove();
+            $(this).addClass('selected');
+        })
     }
     return {
         init: function () {
