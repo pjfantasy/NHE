@@ -1,0 +1,62 @@
+#services-container {
+    .slider {
+        background-image: url(../img/Service/slider/montajes-eletricos-sevilla.jpg);
+        width: 1400px;
+        height: 380px;
+        background-repeat: round;
+        background-size: cover;
+    }
+    .top-content {
+        height: 450px;
+        background: #fff;
+    }
+    .inner_content {
+        background: white;
+        span {
+            color: #797979;
+        }
+    }
+    .service-content {
+        // min-height: 700px;
+        // padding-top: 50px;
+        padding-bottom: 100px;
+        background: #fff;
+        // width: 1170px;
+        margin: 0 auto;
+        .circle-inline{
+            text-align: center;
+            div {
+                width: 220px;
+                height: 220px;
+                overflow: hidden;
+                cursor: pointer;
+                margin: 0 auto;
+                border-radius: 50%;
+                &:hover {
+                    img {
+                        -ms-transform:scale(1.3);
+                        -webkit-transform:scale(1.3);
+                        transform:scale(1.3);
+                    }
+                }
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transition:all .2s linear;
+                    transition:all .2s linear;
+                }
+            }
+            &:hover {
+                h2 {
+                    color: #204a90;
+                }
+            }
+            a {
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
