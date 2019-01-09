@@ -852,6 +852,13 @@ a {
 .main-content .inner_content .products .products-content .item {
   min-height: 255px;
 }
+.main-content .inner_content .products .products-content .item:hover {
+  filter: contrast(130%);
+  cursor: pointer;
+}
+.main-content .inner_content .products .products-content .item-content a:hover {
+  color: #204a90;
+}
 .main-content .inner_content .content-wrapper-link {
   position: absolute;
   top: 0;
@@ -1337,7 +1344,21 @@ li.anim-slide:nth-of-type(3) {
   font-size: 13px;
 }
 #products-container .inner_content .products-content .product-details .inside .item-list a .range-thumb .range-thumb__info .range-thumb__link {
-  color: #42b4e6;
+  color: #337ab7;
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Hind, sans-serif;
+  width: max-content;
+}
+#products-container .inner_content .products-content .product-details .inside .item-list a .range-thumb .range-thumb__info .range-thumb__link:after {
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  width: 9px;
+  height: 2px;
+  background: #17bed2;
+  content: " ";
 }
 #services-container .slider {
   background-image: url(../img/Service/slider/montajes-eletricos-sevilla.jpg);
@@ -1389,4 +1410,117 @@ li.anim-slide:nth-of-type(3) {
 }
 #services-container .service-content .circle-inline a:hover {
   text-decoration: none;
+}
+#contact-container .slider {
+  background-image: url(../img/contact/top_bnr_1500x200_prod.jpg);
+  width: 1400px;
+  height: 200px;
+  background-repeat: round;
+  background-size: cover;
+}
+#contact-container .top-content {
+  height: 260px;
+  background: #fff;
+}
+#contact-container .top-content .img-centered {
+  position: absolute;
+  left: 0px;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+  background: rgba(0, 0, 0, 0.4);
+  width: auto;
+  padding: 10px;
+  top: 100px;
+  width: 45%;
+  height: 200px;
+}
+#contact-container .top-content .img-centered .right {
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+  width: 500px;
+}
+#contact-container .top-content .img-centered .right .slider-title {
+  padding: 11% 0 0%;
+  font-size: 20px;
+  line-height: 47px;
+  max-height: 137px;
+  overflow: hidden;
+}
+#contact-container .top-content .img-centered .right .slider-text {
+  line-height: 18px;
+  padding: 15px 0 0 0;
+  margin-top: 5px;
+  background: url(../img/contact/banner-text-border-bg.png) 0 0 repeat-x;
+  max-height: 54px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 290px;
+  text-shadow: rgba(0, 0, 0, 0.25) 1px 1px 2px;
+  text-align: center;
+  font-size: 15px;
+}
+#contact-container .inner_content {
+  background: white;
+  padding-bottom: 50px;
+}
+#contact-container .inner_content span {
+  color: #797979;
+}
+#contact-container .inner_content .contact-content {
+  padding: 0 150px;
+}
+#contact-container .inner_content .contact-content #contactForm label {
+  color: #204a90;
+  display: table-caption;
+}
+#contact-container .inner_content .contact-content #contactForm .input-group {
+  padding: 0px 0px 15px 0px;
+}
+#contact-container .inner_content .contact-content #contactForm .input-group .input-group-addon {
+  border-radius: 0px;
+  border: none;
+  background-color: #ededed;
+}
+#contact-container .inner_content .contact-content #contactForm .input-group input {
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  background-color: #ededed;
+}
+#contact-container .inner_content .contact-content #contactForm .input-group input:focus {
+  box-shadow: none;
+}
+#contact-container .inner_content .contact-content #contactForm .submit-button {
+  padding-top: 10px;
+}
+#contact-container .inner_content .contact-content #contactForm .submit-button .btn-primary {
+  font-family: Hind, sans-serif;
+  padding: 20px;
+  line-height: 0;
+  font-size: 16px;
+  border-radius: 0;
+  width: 100%;
+}
+#contact-container .inner_content .contact-content #contactForm .comment {
+  width: 100%;
+}
+#contact-container .inner_content .contact-content #contactForm .comment textarea {
+  background: #ededed;
+}
+#contact-container .inner_content .contact-content #contactForm .comment textarea:focus {
+  box-shadow: none;
+}
+#contact-container .inner_content .contact-content .map {
+  padding-top: 80px;
+}
+#contact-container .inner_content .contact-content .infor {
+  width: 80%;
+  padding: 20px 0px;
+  font-weight: 700;
+}
+#contact-container .inner_content .contact-content .infor img {
+  height: 25px;
+  padding-right: 10px;
 }

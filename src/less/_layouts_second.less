@@ -882,9 +882,18 @@
             }
             .item {
                 min-height: 255px;
+                &:hover {
+                  filter: contrast(130%);
+                  cursor: pointer;
+                }
             }
             .last-item {
                 // padding-top: 60px;
+            }
+            .item-content {
+              a:hover {
+                color: #204a90;
+              }
             }
         }
     }
